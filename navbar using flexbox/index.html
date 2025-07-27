@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Exercise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* main * {
+            border: 2px solid black;
+            margin: 1px;
+        } */
+        
+        main {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            font-size: 1vw;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            width: 70vw;
+        }
+        
+        #logo, #lang, #search, li {
+            height: 4vw;
+            margin: 0 .8vw;
+        }
+
+        li {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .leftSide {
+            display: flex;
+        }
+
+        .leftSide li {
+            position: relative;
+            left: -10px;
+        }
+
+        .dropdowns {
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <ul class="navbar">
+            <ul class="leftSide">
+                <img id="logo" src="/assets/logo.png" alt="logo">
+                <li>UltraEdit</li>
+            </ul>
+            <ul class="dropdowns">
+                <li>Products</li>
+                <li>For Business</li>
+                <li>Resources</li>
+                <li>Academic licensing</li>
+                <li>Our company</li>
+                <img id="lang" src="/assets/lang.png" alt="lang">
+                <img id="search" src="/assets/search.png" alt="search">
+            </ul>
+        </ul>
+    </main>
+</body>
+</html>
